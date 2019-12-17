@@ -183,6 +183,8 @@ static NSString *const kQueryStringParamAdditionalDisallowedCharacters = @"=&+";
       // doesn't encode the '+' leading to potential ambiguity with application/x-www-form-urlencoded
       // encoding. Percent encodes '+' to avoid this ambiguity.
       encodedQuery = [encodedQuery stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
+      encodedQuery = [encodedQuery stringByReplacingOccurrencesOfString:@"/" withString:@"%2F"];
+      encodedQuery = [encodedQuery stringByReplacingOccurrencesOfString:@":" withString:@"%3A"];
       return encodedQuery;
     }
   }
