@@ -338,5 +338,3 @@ Browse the [API documentation](http://openid.github.io/AppAuth-iOS/docs/latest/a
 ## Included Samples
 
 Sample apps that explore core AppAuth features are available for iOS and macOS, follow the instructions in [Examples/README.md](Examples/README.md) to get started.
-
-## Added git tag
